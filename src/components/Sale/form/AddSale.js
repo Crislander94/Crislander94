@@ -6,16 +6,15 @@ import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import Select from '@mui/material/Select';
 import { ContainerForm , TitleForm } from '../../styled-components/styled-forms';
-const AddSell  = () => {
+const AddSale  = () => {
     const onSubmit = (e) => {
         e.preventDefault();
     }
-
     //TODO: APLICAR MATERIAL UI FORM.
     return(
         <ContainerForm>
             <form onClick={onSubmit}>
-                <TitleForm>Add Sell</TitleForm>
+                <TitleForm>Add Sale</TitleForm>
                 <Grid container spacing={2}>
                     <Grid item xs={12}>
                         <TextField
@@ -28,7 +27,7 @@ const AddSell  = () => {
                             InputLabelProps={{
                                 shrink: true,
                             }}
-                            autocomplete="off"
+                            autoComplete="off"
                             variant="filled"
                             placeholder="Product Count" />
                     </Grid>
@@ -93,6 +92,4 @@ const AddSell  = () => {
         </ContainerForm>)
 }
 
-
-
-export default AddSell;
+export default AddSale;

@@ -2,8 +2,7 @@ import * as React from 'react';
 import Paper from '@mui/material/Paper';
 import InputBase from '@mui/material/InputBase';
 
-const Filtercomponent = (props) => {
-    const {onFilter, filterText, handleClear} = props;
+const Filtercomponent = ({filterText, onFilter, handleClear}) => {
 
     return (
         <Paper
@@ -12,10 +11,9 @@ const Filtercomponent = (props) => {
         >
             <InputBase
                 sx={{ ml: 1, flex: 1}}
-                placeholder="Search Name Product"
-                inputProps={{ 'aria-label': 'search google maps' }}
-                onChange={onFilter}
+                placeholder="Search Name"
                 value={filterText}
+                onChange={onFilter}
                 onKeyUp={handleClear}
             />
         </Paper>

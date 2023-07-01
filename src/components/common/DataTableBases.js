@@ -6,14 +6,14 @@ const DataTableBases = (props) => {
         <DataTable
             pagination
             dense
-            // noDataComponent= {<>No hay filas por mostrar</>}
+            noDataComponent= {<div>No hay filas por mostrar</div>}
             // paginationComponentOptions ={
-            //     {   
-            //         rowsPerPageText: 'Filas por pagina:',
-            //         rangeSeparatorText: 'de',
-            //         noRowsPerPage: false,
-            //         selectAllRowsItem: false, selectAllRowsItemText: 'Todo'
-            //     }
+                // {   
+                    // rowsPerPageText: 'Filas por pagina:',
+                    // rangeSeparatorText: 'de',
+                    // noRowsPerPage: false,
+                    // selectAllRowsItem: false, selectAllRowsItemText: 'Todo'
+                // }
             // }
             {...props}
         />

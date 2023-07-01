@@ -21,8 +21,8 @@ const AddProduct  = () => {
                             label="Name"
                             type="text"
                             variant="filled"
-                            autocomplete="off"
-                            placeholder="Producjt Name" />
+                            autoComplete="off"
+                            placeholder="Product Name" />
                     </Grid>
 
                     <Grid item xs={12}>
